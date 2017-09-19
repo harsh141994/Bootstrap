@@ -408,11 +408,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script >
+    <script src="js/scripts.js"></script>
+   <!--  <script >
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+    </script> -->
     <!-- <script>
         $(document).ready(function(){
             $("#mycarosel").carousel({interval:2000});
@@ -424,26 +425,7 @@
             });
         });
     </script> -->
-    <script>
-         $(document).ready(function(){
-            $("#mycarosel").carousel({interval:2000});
-            $("#carousel-button").click(function(){
-                if($("#carousel-button").children("span").hasClass("fa-pause")){
-                    $("#mycarosel").carousel('pause');
-                    $("#carousel-button").children("span").removeClass("fa-pause");
-                    $("#carousel-button").children("span").addClass("fa-play");
-                }
-
-                else if($("#carousel-button").children("span").hasClass("fa-play")){
-                    $("#mycarosel").carousel('cycle');
-                    $("#carousel-button").children("span").removeClass("fa-play");
-                    $("#carousel-button").children("span").addClass("fa-pause");
-                }
-                
-            });
-            
-        });
-    </script>
+   
 </body>
 
 </html>
